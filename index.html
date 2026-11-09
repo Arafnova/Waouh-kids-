@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waouh Kids — Le royaume de jeu et de joie</title>
+  <meta name="description" content="Waouh Kids, à Cotonou : espace de jeu pour enfants, restaurant et salle de fête. Ouvert 7j/7 de 8h à 23h. Réservation en ligne.">
+  <meta name="theme-color" content="#1F2147">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== En-tête ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="brand" aria-label="Waouh Kids, accueil">
+        <img src="assets/logo.png" alt="Logo Waouh Kids" width="90" height="74">
+      </a>
+      <nav class="tabs" aria-label="Navigation principale">
+        <a href="#accueil" data-nav="accueil">Accueil</a>
+        <a href="#univers" data-nav="univers">Nos univers</a>
+        <a href="#horaires" data-nav="horaires">Horaires</a>
+        <a href="#reservation" data-nav="reservation" class="btn btn--primary btn--sm">Réserver</a>
+      </nav>
+      <a href="#reservation" class="btn btn--primary btn--sm header__cta">Réserver</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= ACCUEIL ================= -->
+    <section class="view" id="view-accueil" data-view="accueil" aria-label="Accueil">
+      <div class="hero">
+        <svg class="deco deco--star1 spin" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z" fill="#FDB833"/></svg>
+        <svg class="deco deco--star2 float2" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z" fill="#1E9BE9"/></svg>
+        <div class="deco deco--bubble float" aria-hidden="true"></div>
+
+        <div class="container hero__inner">
+          <div class="hero__text">
+            <span class="status"><span class="status__dot" data-status-dot></span><span data-status-label>Ouvert 7j/7 · 8h – 23h</span></span>
+            <h1>Le royaume de <span class="c-blue">jeu</span> et de <span class="c-red">joie</span></h1>
+            <p class="lead">Un espace de jeu pour les enfants, un restaurant pour toute la famille et une salle de fête pour les grands jours.</p>
+            <div class="actions">
+              <a href="#reservation" class="btn btn--primary btn--lg">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>
+                Réserver
+              </a>
+              <a href="#univers" class="btn btn--ghost btn--lg">Découvrir nos univers</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="blob blob--yellow" aria-hidden="true"></div>
+            <div class="blob blob--blue" aria-hidden="true"></div>
+            <div class="hero__card float">
+              <img src="assets/logo.png" alt="Château Waouh Kids avec deux enfants souriants">
+            </div>
+          </div>
+        </div>
+
+        <svg class="wave" aria-hidden="true" viewBox="0 0 1440 110" preserveAspectRatio="none">
+          <path d="M0,50 C240,0 480,100 720,50 C960,0 1200,100 1440,50 L1440,110 L0,110 Z" fill="#E8572A"/>
+          <path d="M0,64 C240,14 480,114 720,64 C960,14 1200,114 1440,64 L1440,110 L0,110 Z" fill="#1E9BE9"/>
+          <path d="M0,78 C240,28 480,128 720,78 C960,28 1200,128 1440,78 L1440,110 L0,110 Z" fill="#FFF1D6"/>
+        </svg>
+      </div>
+
+      <!-- Raccourcis vers les univers -->
+      <div class="band band--yellow">
+        <div class="container stack-md">
+          <h2 class="center">Trois univers, une seule adresse</h2>
+          <div class="grid-3">
+            <a href="#univers-jeu" class="ucard" style="--c:#1E9BE9">
+              <span class="ucard__icon" style="background:#1E9BE9">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9l4-4 4 4v12"/><path d="M12 13c3 0 4 2 8 8"/><path d="M7 21v-4h2v4"/><path d="M3 21h18"/></svg>
+              </span>
+              <span class="ucard__title">Espace de jeu</span>
+              <span class="ucard__more">Découvrir →</span>
+            </a>
+            <a href="#univers-resto" class="ucard" style="--c:#E8572A">
+              <span class="ucard__icon" style="background:#E8572A">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v8a2 2 0 0 0 2 2v8"/><path d="M11 3v6a2 2 0 0 1-2 2"/><path d="M3 3v6a2 2 0 0 0 2 2"/><path d="M17 21V3c2.5 1 4 3.5 4 7v3h-4"/></svg>
+              </span>
+              <span class="ucard__title">Restaurant</span>
+              <span class="ucard__more">Découvrir →</span>
+            </a>
+            <a href="#univers-fete" class="ucard" style="--c:#7B4BC4">
+              <span class="ucard__icon" style="background:#7B4BC4">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21h16"/><path d="M5 21v-7h14v7"/><path d="M5 17c2 1 3-1 5 0s3 1 4 0 3-1 5 0"/><path d="M12 14V9"/><path d="M12 6c-1-1 0-3 0-3s1 2 0 3"/></svg>
+              </span>
+              <span class="ucard__title">Salle de fête</span>
+              <span class="ucard__more">Découvrir →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nous trouver -->
+      <div class="band">
+        <div class="container find">
+          <div class="box">
+            <h2>Nous trouver</h2>
+            <ul class="contact">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#D9531E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>[ADRESSE], Cotonou</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#1E78C8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>[TÉLÉPHONE]</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#7B4BC4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>[E-MAIL]</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#178A4C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Tous les jours, de 8h à 23h</li>
+            </ul>
+            <a class="btn btn--wa" data-wa-contact target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+          </div>
+          <div class="map">[Carte Google Maps de l’emplacement]</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOS UNIVERS ================= -->
+    <section class="view" id="view-univers" data-view="univers" aria-labelledby="t-univers" hidden>
+      <div class="page-head page-head--yellow">
+        <div class="container">
+          <h1 id="t-univers">Nos univers</h1>
+          <div class="seg" role="tablist" aria-label="Choisir un univers">
+            <a href="#univers-jeu" role="tab" data-sub="jeu" style="--c:#0B6FB8">Espace de jeu</a>
+            <a href="#univers-resto" role="tab" data-sub="resto" style="--c:#C2410C">Restaurant</a>
+            <a href="#univers-fete" role="tab" data-sub="fete" style="--c:#7B4BC4">Salle de fête</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-body">
+        <!-- Espace de jeu -->
+        <article class="panel" data-panel="jeu" role="tabpanel" style="--c:#1E9BE9; --tint:#E6F4FE">
+          <div class="detail">
+            <div class="detail__text">
+              <h2>Un terrain d’aventures pour grandir en s’amusant</h2>
+              <p>Des structures colorées, des zones adaptées à chaque âge et une équipe attentive : les enfants explorent, grimpent et se font des amis pendant que vous gardez un œil sur eux.</p>
+              <a href="#reservation-jeu" class="btn btn--dark">Réserver un créneau de jeu</a>
+            </div>
+            <ul class="points">
+              <li>Zones adaptées par âge</li>
+              <li>Coin des tout-petits</li>
+              <li>Espace sécurisé et surveillé</li>
+              <li>Vue sur le jeu depuis le restaurant</li>
+            </ul>
+          </div>
+          <div class="photos" aria-label="Photos à venir">
+            <div class="photo">[Photo : structures de jeu]</div>
+            <div class="photo">[Photo : coin des tout-petits]</div>
+            <div class="photo">[Photo : enfants en action]</div>
+          </div>
+        </article>
+
+        <!-- Restaurant -->
+        <article class="panel" data-panel="resto" role="tabpanel" style="--c:#E8572A; --tint:#FFF1D6" hidden>
+          <div class="detail">
+            <div class="detail__text">
+              <h2>On se régale pendant que les petits s’amusent</h2>
+              <p>Petit-déjeuner, déjeuner, goûter ou dîner : un menu pour les enfants, un autre pour les grands, servi de 8h à 23h.</p>
+              <a href="#reservation-resto" class="btn btn--dark">Réserver une table</a>
+            </div>
+            <ul class="points">
+              <li>Menu enfants</li>
+              <li>Plats pour les parents</li>
+              <li>Goûters et douceurs</li>
+              <li>Service de 8h à 23h</li>
+            </ul>
+          </div>
+          <div class="photos" aria-label="Photos à venir">
+            <div class="photo">[Photo : salle du restaurant]</div>
+            <div class="photo">[Photo : plat signature]</div>
+            <div class="photo">[Photo : goûter des enfants]</div>
+          </div>
+        </article>
+
+        <!-- Salle de fête + anniversaires -->
+        <article class="panel" data-panel="fete" role="tabpanel" style="--c:#7B4BC4; --tint:#F1EAFB" hidden>
+          <div class="detail">
+            <div class="detail__text">
+              <h2>La salle de fête où chaque enfant est la star</h2>
+              <p>Anniversaires, baptêmes, fêtes de fin d’année : une salle décorée selon votre thème, avec l’espace de jeu et le restaurant à deux pas.</p>
+              <a href="#reservation-fete" class="btn btn--dark">Réserver la salle de fête</a>
+            </div>
+            <ul class="points">
+              <li>Décoration à thème</li>
+              <li>Gâteau et buffet</li>
+              <li>Animation possible</li>
+              <li>Accès à l’espace de jeu</li>
+            </ul>
+          </div>
+
+          <h3 class="sub-title">Nos formules anniversaire</h3>
+          <div class="grid-3 offers">
+            <div class="offer">
+              <span class="pill pill--blue">Petit château</span>
+              <div class="offer__price">[PRIX] <small>FCFA</small></div>
+              <div class="offer__meta">Jusqu’à [NB] enfants · [DURÉE]</div>
+              <ul><li>Accès à l’espace de jeu</li><li>Table décorée</li><li>Goûter</li></ul>
+            </div>
+            <div class="offer offer--featured">
+              <span class="offer__badge">La plus choisie</span>
+              <span class="pill pill--glass">Grand royaume</span>
+              <div class="offer__price">[PRIX] <small>FCFA</small></div>
+              <div class="offer__meta">Jusqu’à [NB] enfants · [DURÉE]</div>
+              <ul><li>Salle de fête privatisée</li><li>Décoration à thème</li><li>Repas au restaurant</li><li>Gâteau d’anniversaire</li></ul>
+            </div>
+            <div class="offer offer--dashed">
+              <span class="pill pill--orange">Sur mesure</span>
+              <div class="offer__price">Sur devis</div>
+              <div class="offer__meta">Fêtes d’école, associations, entreprises</div>
+              <ul><li>Programme adapté</li><li>Menu au choix</li><li>Grands groupes</li></ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= HORAIRES ================= -->
+    <section class="view" id="view-horaires" data-view="horaires" aria-labelledby="t-horaires" hidden>
+      <div class="page-head page-head--blue">
+        <div class="container">
+          <h1 id="t-horaires">Horaires</h1>
+          <span class="status status--light"><span class="status__dot" data-status-dot></span><span data-status-label>Ouvert 7j/7 · 8h – 23h</span></span>
+        </div>
+      </div>
+      <div class="container page-body page-body--narrow">
+        <div class="box">
+          <p class="box__intro">Waouh Kids vous accueille tous les jours, de 8h à 23h : l’espace de jeu, le restaurant et la salle de fête.</p>
+          <ul class="hours" id="hours"></ul>
+          <a href="#reservation" class="btn btn--primary">Réserver un moment</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RÉSERVATION ================= -->
+    <section class="view" id="view-reservation" data-view="reservation" aria-labelledby="t-resa" hidden>
+      <div class="page-head page-head--purple">
+        <div class="container">
+          <h1 id="t-resa">Réservation</h1>
+          <ol class="steps">
+            <li><span>1</span>Choisissez</li>
+            <li><span>2</span>Envoyez</li>
+            <li><span>3</span>Confirmation</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container page-body page-body--narrow">
+        <form class="form" id="form" novalidate>
+          <fieldset>
+            <legend>Que souhaitez-vous réserver ?</legend>
+            <div class="types" id="types"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Quel jour ?</legend>
+            <div class="dates" id="dates"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Quel créneau ?</legend>
+            <div class="slots" id="slots"></div>
+          </fieldset>
+          <fieldset>
+            <legend>Combien de personnes ?</legend>
+            <div class="counters">
+              <div class="counter counter--yellow">
+                <span>Enfants</span>
+                <div class="counter__ctrl">
+                  <button type="button" class="round round--light" data-count="kids" data-step="-1" aria-label="Retirer un enfant">−</button>
+                  <output id="kids" aria-live="polite">2</output>
+                  <button type="button" class="round" data-count="kids" data-step="1" aria-label="Ajouter un enfant">+</button>
+                </div>
+              </div>
+              <div class="counter counter--purple">
+                <span>Adultes</span>
+                <div class="counter__ctrl">
+                  <button type="button" class="round round--light" data-count="adults" data-step="-1" aria-label="Retirer un adulte">−</button>
+                  <output id="adults" aria-live="polite">1</output>
+                  <button type="button" class="round" data-count="adults" data-step="1" aria-label="Ajouter un adulte">+</button>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <div class="fields">
+              <div class="field"><label for="name">Nom du parent *</label><input id="name" type="text" autocomplete="name" placeholder="Ex. Aïcha Dossou" required></div>
+              <div class="field"><label for="phone">Numéro WhatsApp *</label><input id="phone" type="tel" autocomplete="tel" placeholder="+229 01 00 00 00 00" required></div>
+              <div class="field"><label for="email">E-mail *</label><input id="email" type="email" autocomplete="email" placeholder="vous@exemple.com" required></div>
+            </div>
+          </fieldset>
+          <p class="error" id="error" role="alert" hidden></p>
+          <button type="submit" class="btn btn--primary btn--xl" id="submitBtn">Envoyer ma demande</button>
+          <p class="form__note">Vous recevrez la confirmation sur WhatsApp et par e-mail.</p>
+        </form>
+
+        <div class="confirm pop" id="confirm" hidden>
+          <span class="confirm__check bounce">
+            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </span>
+          <h2 id="confirmTitle">Merci !</h2>
+          <p>Votre demande est bien envoyée. Vous recevrez la confirmation sur WhatsApp et par e-mail.</p>
+          <div class="actions actions--center">
+            <a href="#accueil" class="btn btn--ghost">Retour à l’accueil</a>
+            <button type="button" class="btn btn--dark" id="reset">Nouvelle réservation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pied de page ===== -->
+  <footer class="footer">
+    <svg class="wave wave--footer" aria-hidden="true" viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,30 C240,80 480,0 720,30 C960,60 1200,0 1440,30 L1440,80 L0,80 Z" fill="#FDB833"/>
+      <path d="M0,44 C240,94 480,14 720,44 C960,74 1200,14 1440,44 L1440,80 L0,80 Z" fill="#E8572A"/>
+      <path d="M0,58 C240,108 480,28 720,58 C960,88 1200,28 1440,58 L1440,80 L0,80 Z" fill="#1F2147"/>
+    </svg>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="Logo Waouh Kids" width="78" height="64">
+        <span>Le royaume de jeu et de joie</span>
+      </div>
+      <small>© <span id="year">2026</span> Waouh Kids · Cotonou · 7j/7 de 8h à 23h</small>
+    </div>
+  </footer>
+
+  <!-- ===== Barre d'onglets mobile ===== -->
+  <nav class="tabbar" aria-label="Navigation mobile">
+    <a href="#accueil" data-nav="accueil">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>
+      Accueil
+    </a>
+    <a href="#univers" data-nav="univers">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"/></svg>
+      Univers
+    </a>
+    <a href="#horaires" data-nav="horaires">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      Horaires
+    </a>
+    <a href="#reservation" data-nav="reservation" class="tabbar__cta">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M8 2.5v4M16 2.5v4M3 10h18"/></svg>
+      Réserver
+    </a>
+  </nav>
+
+  <a class="wa-float bounce" data-wa-contact target="_blank" rel="noopener" aria-label="Contacter Waouh Kids sur WhatsApp">
+    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l1.7-4.6A8.5 8.5 0 1 1 7.6 19.3z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-1 .8a4 4 0 0 1-2.1-2.1l.8-1-1-2z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
